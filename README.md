@@ -78,7 +78,7 @@ youtube-mvvm-app/
 │   ├── main.tsx         # Renders the app (entry point)
 │
 │
-└── .github/             # GitHub Actions for CI/CD
+└── ..github/             # GitHub Actions for CI/CD
     ├── workflows/
     │   ├── deploy.yml   # Deploy to GitHub Pagesdeploy.yml   # Deploy to GitHub Pages
 ```
