@@ -1,0 +1,35 @@
+.modalContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  background: #212121;
+  color: #fff;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  form {
+    width: 100%;
+  }
+}
+
+.modalTitle {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #fff;
+  text-align: left;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.error {
+  color: red;
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+}
