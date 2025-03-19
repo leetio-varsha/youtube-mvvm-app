@@ -95,7 +95,7 @@ youtube-mvvm-app/
 ## 💻 Installation & Setup
 ### 1️⃣ Clone the Repository
 ```sh
-git clone https://github.com/YOUR_USERNAME/youtube-mvvm-app.git
+git clone https://github.com/leetio-varsha/youtube-mvvm-app.git
 cd youtube-mvvm-app
 ```
 
