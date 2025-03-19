@@ -1,4 +1,6 @@
 # 🎬 YouTube Video Player App (MVVM Pattern)
+### Check appa preview:
+https://leetio-varsha.github.io/youtube-mvvm-app/
 
 ## 📌 Project Overview
 This is a **React (Vite) + TypeScript** application that follows the **MVVM pattern** and uses **Zustand** for state management. The app allows users to:

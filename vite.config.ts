@@ -6,4 +6,8 @@ import tsconfigPaths from "vite-tsconfig-paths";
 export default defineConfig({
   plugins: [react(), tsconfigPaths()],
   base: "/youtube-mvvm-app/",
+  build: {
+    outDir: "dist",
+    assetsDir: "assets",
+  },
 });
