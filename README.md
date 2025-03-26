@@ -4,20 +4,17 @@ https://leetio-varsha.github.io/youtube-mvvm-app/
 
 ## 📌 Project Overview
 This is a **React (Vite) + TypeScript** application that follows the **MVVM pattern** and uses **Zustand** for state management. The app allows users to:
-- **Add and play multiple YouTube videos** 📺
+- **Add and play YouTube video** 📺
 - **Remember video playback position** ⏳
-- **Edit and remove videos** ✏️❌
-- **Display video thumbnails** 🎞️
+- **Edit and remove video** ✏️❌
 - **Navigate between Home, Video, and GIF pages** 🚀
-- **Show random funny GIFs on a dedicated page** 😆
+- **Show funny GIFs on a dedicated page** 😆
 
 ## 🚀 Tech Stack
 - **Frontend:** React (Vite) + TypeScript
 - **State Management:** Zustand (with persist middleware)
 - **Styling:** SCSS Modules (YouTube-like UI)
 - **Video Integration:** react-youtube + LocalStorage
-- **Time Handling:** date-fns
-- **Testing:** Vitest + React Testing Library
 - **Linting & Formatting:** ESLint + Prettier
 - **Deployment:** GitHub Pages
 
@@ -40,10 +37,9 @@ youtube-mvvm-app/
 │   │   ├── components/
 │   │   │   ├── Button.tsx      # Reusable button component
 │   │   │   ├── Input.tsx       # Reusable input component
-│   │   │   ├── Loader.tsx      # Loading indicator
+│   │   │   ├── VideoPlayer.tsx # Reusable VideoPlayer component
 │   │   ├── services/
-│   │   │   ├── storage.ts      # LocalStorage utility
-│   │   │   ├── videoService.ts # Business logic related to video management
+│   │   │   ├── AddVideoService.ts # Business logic related to video management
 │   │   ├── store/
 │   │   │   ├── VideoStore.ts   # Zustand store for video list
 │   │   ├── styles/
@@ -57,17 +53,9 @@ youtube-mvvm-app/
 │
 │   ├── features/
 │   │   ├── home/
-│   │   │   ├── components/
-│   │   │   │   ├── VideoList.tsx  # YouTube video player
-│   │   │   │   ├── VideoItem.tsx  # Input form for YouTube URL
 │   │   │   ├── views/
 │   │   │   │   ├── HomePage.tsx  # Landing page
 │   │   ├── video/
-│   │   │   ├── components/
-│   │   │   │   ├── VideoPlayer.tsx  # YouTube video player
-│   │   │   │   ├── VideoForm.tsx    # Input form for YouTube URL
-│   │   │   ├── viewmodel/
-│   │   │   │   ├── VideoStore.ts    # Zustand store for video state
 │   │   │   ├── views/
 │   │   │   │   ├── VideoPage.tsx    # Video page with logic
 │   │   ├── gif/
@@ -84,8 +72,8 @@ youtube-mvvm-app/
 ```
 
 ## 🎮 Features
-✅ **Add multiple YouTube videos**
-✅ **Save videos with unique thumbnails**
+✅ **Add YouTube video**
+✅ **Save videos**
 ✅ **Remember playback position** (resumes where you left off)
 ✅ **Edit and remove videos**
 ✅ **Show random GIFs on GIF Page**
@@ -131,7 +119,7 @@ npm run deploy
 
 ## 📌 Notes
 - **Zustand persist middleware** ensures video data remains saved across sessions.
-- **Edit feature updates video thumbnails instantly**.
+- **Edit feature updates video instantly**.
 - **GIF page selects a random funny GIF on each visit**.
 
 ---
