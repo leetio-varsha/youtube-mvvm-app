@@ -1,15 +1,14 @@
-import React from "react";
 import { useNavigate } from "react-router-dom";
 import VideoPlayer from "shared/components/VideoPlayer";
 import styles from "./VideoPage.module.scss";
-import { useVideoService } from "shared/services/videoService.ts";
 import Button from "@shared/components/Button";
+import { useVideoStore } from "@shared/store/VideoStore.ts";
 
-const VideoPage: React.FC = () => {
+const VideoPage = () => {
   const navigate = useNavigate();
-  const { currentVideo } = useVideoService();
-
-  if (!currentVideo) {
+  const video = useVideoStore((state) => state.video);
+  console.log(video);
+  if (!video) {
     return (
       <div className={styles.container}>
         <h2>Video not found</h2>
@@ -21,7 +20,7 @@ const VideoPage: React.FC = () => {
   return (
     <div className={styles.container}>
       <h2 className={styles.title}>Now Playing</h2>
-      <VideoPlayer videoUrl={currentVideo.url} videoId={currentVideo.id} playbackTime={currentVideo.playbackTime} />
+      <VideoPlayer />
       <div className={styles.buttons}>
         <Button onClick={() => navigate("/")}>Back to Home</Button>
         <Button variant={"secondary"} onClick={() => navigate("/gif")}>

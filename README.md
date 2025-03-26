@@ -45,7 +45,7 @@ youtube-mvvm-app/
 │   │   │   ├── storage.ts      # LocalStorage utility
 │   │   │   ├── videoService.ts # Business logic related to video management
 │   │   ├── store/
-│   │   │   ├── videoStore.ts   # Zustand store for video list
+│   │   │   ├── VideoStore.ts   # Zustand store for video list
 │   │   ├── styles/
 │   │   │   ├── main.scss       # Global styles
 │   │   │   ├── variables.scss  # SCSS variables
@@ -67,7 +67,7 @@ youtube-mvvm-app/
 │   │   │   │   ├── VideoPlayer.tsx  # YouTube video player
 │   │   │   │   ├── VideoForm.tsx    # Input form for YouTube URL
 │   │   │   ├── viewmodel/
-│   │   │   │   ├── videoStore.ts    # Zustand store for video state
+│   │   │   │   ├── VideoStore.ts    # Zustand store for video state
 │   │   │   ├── views/
 │   │   │   │   ├── VideoPage.tsx    # Video page with logic
 │   │   ├── gif/
